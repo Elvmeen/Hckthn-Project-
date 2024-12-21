@@ -1,0 +1,887 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home - PL-WASTEMGT</title>
+     <!-- <meta content="width=device-width, initial-scale=1.0" name="viewport"> -->
+    <meta content="s" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark">
+        <div class="row py-2 px-lg-5">
+            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center text-white">
+                    <small><i class="fa fa-phone-alt mr-2"></i>+2348125412914</small>
+                    <small class="px-3">|</small>
+                    <small><i class="fa fa-envelope mr-2"></i>info@plswastemgt.com</small>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-white pl-2" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+            <a href="index.html" class="navbar-brand ml-lg-3">
+                <h1 class="m-0 display-5 text-uppercase text-primary"><i class="fa fa-truck mr-2"></i>E-WASTE</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav m-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="#aboutus" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link">Services</a>
+                    <a href="#pricingplan" class="nav-item nav-link">Price</a>
+                    <div class="nav-item dropdown">
+                        
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="signup.html" class="btn btn-primary py-2 px-4 d-none d-lg-block">Register</a>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+<!-- Navbar Start -->
+<div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark py-3 px-lg-5 sticky-top" style="background: linear-gradient(90deg, #006400 0%, #228B22 100%);">
+        <!-- Navbar Toggler for Mobile -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Navbar Content -->
+        <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#quote-request" class="nav-item nav-link active" style="transition: color 0.3s;">Waste Collection Booking</a>
+                <a href="signup.html" class="nav-item nav-link" style="transition: color 0.3s;">Instant Pickup Request</a>
+                <a href="illegalwaste.html" class="nav-item nav-link" style="transition: color 0.3s;">Waste Reporting</a>
+                <a href="recycle.html" class="nav-item nav-link" style="transition: color 0.3s;">Recycling Finder</a>
+                
+            </div>
+        </div>
+    </nav>
+</div>
+<!-- Navbar End -->
+
+<style>
+/* Navbar Styles */
+.navbar {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+/* Navbar Link Styles */
+.navbar-nav .nav-link {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    color: #f8f9fa; /* Default text color */
+}
+
+/* Hover Effect */
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Lighter hover effect */
+    color: #f8f9fa; /* Text color on hover */
+}
+
+/* Active Link State */
+.navbar-nav .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.5); /* Clear active link background */
+    color: #228B22; /* Text color for active link */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    .navbar-nav .nav-link {
+        margin: 10px 0;
+    }
+}
+
+/* Prevent Text Obscuring */
+.navbar-nav .nav-link {
+    z-index: 1030; /* Ensure the text and links are always above the shadow */
+}
+</style>
+
+
+    <!-- Header Start -->
+    <div class="jumbotron jumbotron-fluid mb-5">
+        <div class="container text-center py-5">
+            <h1 class="text-primary mb-4">PLATEAU STATE</h1>
+            <h1 class="text-white display-3 mb-5">WASTE MANAGEMENT CENTER</h1>
+            <div class="mx-auto" style="width: 100%; max-width: 600px;">
+                
+               <form action="tracking.php" method="POST">
+                <div class="input-group">
+                    
+                    
+                    <input type="text" id="tracking_id" name="tracking_id" class="form-control border-light" style="padding: 30px;" placeholder="Enter Your Tracking Id to Track Your Service">
+                    
+                    <div class="input-group-append">
+                        <button type="submit" button class="btn btn-primary px-3">Service Track</button>
+                    
+                    </div>
+                    
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+<!-- Header Start -->
+<!--<div id="special-jumbotron" class="jumbotron jumbotron-fluid mb-5" style="background-color: black;">-->
+<div id="special-jumbotron" style="background-color: black;">
+    <div class="container text-center py-4"> <!-- Adjust py-4 for vertical centering -->
+        <div class="mx-auto" style="width: 100%; max-width: 600px;">
+            <div class="d-flex justify-content-center">
+                <a href="signup.html" class="btn btn-primary mx-2">Book a Pickup / Register</a>
+            </div>
+            <div class="d-flex justify-content-center mt-3">
+                <a href="contact.html" class="btn btn-secondary mx-2">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Header End -->
+
+
+    <!-- Services Start -->
+    <div id="services" div class="container-fluid pt-5">
+        <div class="container">
+            <div class="text-center pb-2">
+                <h6 class="text-primary text-uppercase font-weight-bold">Our Services</h6>
+                <h1 class="mb-4">Best Waste Management Solutions</h1>
+            </div>
+            <div class="row pb-3">
+                <div class="col-lg-3 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
+                        <i class="fa fa-2x fa-truck text-dark pr-3"></i>
+                        <h6 class="text-white font-weight-medium m-0">Waste Collection Services</h6>
+                    </div>
+                    <p>Efficient Waste Collection: Reliable, Timely, and Eco-Friendly disposal for your community’s needs.</p>
+                    <a class="border-bottom text-decoration-none" href="">Read More</a>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
+                        <i class="fa fa-2x fa-ship text-dark pr-3"></i>
+                        <h6 class="text-white font-weight-medium m-0">Recycling Solutions</h6>
+                    </div>
+                    <p>Sustainable Recycling Services: Promote reuse and recycling to reduce waste and protect the environment.
+</p>
+                    <a class="border-bottom text-decoration-none" href="">Read More</a>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
+                        <i class="fa fa-2x fa-truck text-dark pr-3"></i>
+                        <h6 class="text-white font-weight-medium m-0">Community Waste Reporting</h6>
+                    </div>
+                    <p>Empower Communities: Easily report illegal dumping or waste issues for faster resolution.</p>
+                    <a class="border-bottom text-decoration-none" href="">Read More</a>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
+                        <i class="fa fa-2x fa-store text-dark pr-3"></i>
+                        <h6 class="text-white font-weight-medium m-0">Recycling Pickup Services</h6>
+                    </div>
+                    <p>Convenient Recycling Pickup: On-demand collection for your recyclable materials, ensuring they are properly processed.</p>
+                    <a class="border-bottom text-decoration-none" href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+<!-- About Us Start -->
+<div class="container-fluid py-5 bg-light" id="about-us">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="text-left pb-4">
+                    <h6 class="text-uppercase text-success font-weight-bold">About Us</h6>
+                    <h1 class="mb-4 font-weight-bold">Your Trusted & Swift Waste Management Partner</h1>
+                    <p class="text-muted mb-4">Welcome to our world of waste management excellence! We pride ourselves on being your reliable partner in effective waste disposal and recycling, delivering solutions with speed, precision, and a commitment to exceeding your expectations at every step.</p>
+                    <a href="#services" class="btn btn-success py-2 px-4 font-weight-bold">Explore Our Services</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="position-relative">
+                      <iframe class="w-100 rounded shadow-lg" width="560" height="315" src="https://www.youtube.com/embed/ItPO_Wq6dm8?si=tEKjOK6ZiX7yWgv1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		<div class="position-absolute" style="bottom: 10px; right: 10px;">
+                        
+                            <i class="fa fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About Us End -->
+
+
+<style>
+#about-us h1 {
+    font-size: 2.5rem;
+    color: #343a40;
+}
+
+#about-us p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+#about-us .btn-success {
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #28a745;
+    border: none;
+}
+
+#about-us .btn-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 12px 0px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.42857;
+    color: white;
+}
+
+#about-us .btn-lg {
+    width: 70px;
+    height: 70px;
+}
+
+#about-us iframe {
+    transition: transform 0.3s ease;
+}
+
+#about-us iframe:hover {
+    transform: scale(1.05);
+}
+
+#about-us .btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+#about-us .btn-danger:hover {
+    background-color: #c82333;
+}
+
+#about-us .position-relative {
+    position: relative;
+    text-align: center;
+}
+
+#about-us .shadow-lg {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+[data-toggle="tooltip"] {
+    position: relative;
+    cursor: pointer;
+}
+
+[data-toggle="tooltip"]::before {
+    content: attr(data-placement);
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 3px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+[data-toggle="tooltip"]:hover::before {
+    opacity: 1;
+    transform: translateY(-120%);
+}
+</style>
+
+
+
+    <!--  Quote Request Start -->
+    <div id="quote-request" div class="container-fluid bg-secondary my-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 py-5 py-lg-0">
+                    <h6 class="text-primary text-uppercase font-weight-bold">Book A Pickup and we would get back to you shortly</h6>
+                    <h1 class="mb-4">Schedule a Waste Collection</h1>
+                    <p class="mb-4">Need help managing your waste efficiently? Let us assist you! Scheduling a waste collection is simple and hassle-free. Our team is ready to provide customized solutions tailored to your waste management needs.</p>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h1 class="text-primary mb-2" data-toggle="counter-up">225</h1>
+                            <h6 class="font-weight-bold mb-4">SKilled Experts</h6>
+                        </div>
+                        <div class="col-sm-4">
+                            <h1 class="text-primary mb-2" data-toggle="counter-up">1050</h1>
+                            <h6 class="font-weight-bold mb-4">Happy Clients</h6>
+                        </div>
+                        <div class="col-sm-4">
+                            <h1 class="text-primary mb-2" data-toggle="counter-up">2500</h1>
+                            <h6 class="font-weight-bold mb-4">Complete Projects</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="bg-primary py-5 px-4 px-sm-5">
+                        <form class="py-5" form action="https://formspree.io/f/xqkrnrvo" method="post">
+                        <div class="form-group">
+                                <input type="text" class="form-control border-0 p-4" placeholder="Your Name" name="name" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control border-0 p-4" placeholder="Your Email" name="email" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <select class="custom-select border-0 px-4" style="height: 47px;" name="service">
+                                    <option selected>Select A Service</option>
+                                    <option value="1-Basic">Service 1 (BASIC)</option>
+                                    <option value="2-Premium">Service 2 (PREMIUM)</option>
+                                    <option value="3-Business">Service 3 (BUSINESS)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <button class="btn btn-dark btn-block border-0 py-3" type="submit">Book A Pickup</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quote Request Start -->
+
+
+
+ <!-- Features Start -->
+<div class="container-fluid bg-light my-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5">
+                <img class="img-fluid rounded shadow" src="img/feature.jpg" alt="Waste Management Solutions">
+            </div>
+            <div class="col-lg-7 py-5 py-lg-0">
+                <h6 class="text-primary text-uppercase font-weight-bold">Why Choose Us</h6>
+                <h1 class="mb-4">Efficient, Safe, and Reliable Waste Management Solutions</h1>
+                <p class="mb-4">
+                    Welcome to a new era of waste management! We take pride in being your trusted partner in effective waste disposal and recycling. With our commitment to sustainability and efficiency, we aim to exceed your expectations at every stage of the process.
+                </p>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <h6 class="d-flex align-items-center">
+                            <i class="far fa-dot-circle text-primary mr-3"></i> Leading in Industry
+                        </h6>
+                    </li>
+                    <li class="mb-3">
+                        <h6 class="d-flex align-items-center">
+                            <i class="far fa-dot-circle text-primary mr-3"></i> On-Demand Services
+                        </h6>
+                    </li>
+                    <li class="mb-3">
+                        <h6 class="d-flex align-items-center">
+                            <i class="far fa-dot-circle text-primary mr-3"></i> 24/7 Customer Support
+                        </h6>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-primary mt-3 py-2 px-4 rounded">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Features End -->
+
+<!-- Pricing Plan Start -->
+<div id="pricingplan" div class="container-fluid pt-5 pb-5">
+    <div class="container">
+        <div class="text-center pb-4">
+            <h6 class="text-uppercase text-secondary font-weight-bold text-red">Pricing Plan</h6>
+            <h1 class="mb-4 font-weight-bold">Affordable Waste Management Packages</h1>
+        </div>
+        <div class="row justify-content-center">
+            <!-- Basic Plan -->
+            <div class="col-md-4 mb-5">
+                <div class="card border-0 shadow-sm rounded-lg">
+                    <div class="card-body p-4 text-center">
+                        <h2 class="text-primary font-weight-bold mb-0">N5,000</h2>
+                        <p class="text-muted">/Month</p>
+                        <h4 class="card-title text-dark font-weight-bold mt-3">Basic Plan</h4>
+                        <ul class="list-unstyled mt-4">
+                            <li class="py-2"><i class="fas fa-check text-primary"></i> Standard waste collection</li>
+                            <li class="py-2"><i class="fas fa-check text-primary"></i> Community waste reporting</li>
+                            <li class="py-2"><i class="fas fa-check text-primary"></i> Locate recycling points</li>
+                            <li class="py-2"><i class="fas fa-check text-primary"></i> Basic customer support</li>
+                        </ul>
+                        <a href="#quote-request" class="btn btn-primary btn-block py-3 mt-4 rounded-lg">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="col-md-4 mb-5">
+                <div class="card border-0 shadow-lg rounded-lg">
+                    <div class="card-body p-4 text-center">
+                        <h2 class="text-primary font-weight-bold mb-0">N10,000</h2>
+                        <p class="text-muted">/Month</p>
+                        <h4 class="card-title text-dark font-weight-bold mt-3">Premium Plan</h4>
+                        <ul class="list-unstyled mt-4">
+                            <li class="py-2"><i class="fas fa-check text-primary"></i> Standard & on-demand collection</li>
+                            <li class="py-2"><i class="fas fa-check text-primary"></i> Priority customer support</li>
+                            <li class="py-2"><i class="fas fa-check text-primary"></i> Real-time collection updates</li>
+                            <li class="py-2"><i class="fas fa-check text-primary"></i> Recycling pickup requests</li>
+                        </ul>
+                        <a href="#quote-request" class="btn btn-primary btn-block py-3 mt-4 rounded-lg">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Business Plan -->
+            <div class="col-md-4 mb-5">
+                <div class="card border-0 shadow-lg rounded-lg">
+                    <div class="card-body p-4 text-center">
+                        <h2 class="text-primary font-weight-bold mb-0">N15,000</h2>
+                        <p class="text-muted">/Month</p>
+                        <h4 class="card-title text-dark font-weight-bold mt-3">Business Plan</h4>
+                        <ul class="list-unstyled mt-4">
+                            <li class="py-2"><i class="fas fa-check text-primary"></i> Full waste & recycling tools</li>
+                            <li class="py-2"><i class="fas fa-check text-primary"></i> 24/7 dedicated support</li>
+                            <li class="py-2"><i class="fas fa-check text-primary"></i> Waste tracking dashboard</li>
+                            <li class="py-2"><i class="fas fa-check text-primary"></i> Advanced analytics</li>
+                        </ul>
+                        <a href="#quote-request" class="btn btn-primary btn-block py-3 mt-4 rounded-lg">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Pricing Plan End -->
+
+
+
+  
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center pb-2">
+                <h6 class="text-primary text-uppercase font-weight-bold">Testimonial</h6>
+                <h1 class="mb-4">What Our Clients Say</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="position-relative bg-secondary p-4">
+                    <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid rounded-circle" src="img/testimonial-1.jpg" style="width: 60px; height: 60px;" alt="">
+                        <div class="ml-3">
+                            <h6 class="font-weight-semi-bold m-0">Musa John</h6>
+                            <small>- Civil Servant</small>
+                        </div>
+                    </div>
+                    <p class="m-0">"We experienced exceptional service in waste management. Their team was professional and responsive, making the process seamless."</p>
+                </div>
+                <div class="position-relative bg-secondary p-4">
+                    <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid rounded-circle" src="img/testimonial-2.jpg" style="width: 60px; height: 60px;" alt="">
+                        <div class="ml-3">
+                            <h6 class="font-weight-semi-bold m-0">Madugu Kicima</h6>
+                            <small>- Nurse</small>
+                        </div>
+                    </div>
+                    <p class="m-0">"Thanks to their efficient recycling solutions, our community is now more sustainable. Highly recommend their services!"</p>
+                </div>
+                <div class="position-relative bg-secondary p-4">
+                    <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid rounded-circle" src="img/testimonial-3.jpg" style="width: 60px; height: 60px;" alt="">
+                        <div class="ml-3">
+                            <h6 class="font-weight-semi-bold m-0">Bilya Alexa</h6>
+                            <small>- Student</small>
+                        </div>
+                    </div>
+                    <p class="m-0">"The waste collection service was timely and reliable. They exceeded our expectations in every way!"
+
+</p>
+                </div>
+                <div class="position-relative bg-secondary p-4">
+                    <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid rounded-circle" src="img/testimonial-4.jpg" style="width: 60px; height: 60px;" alt="">
+                        <div class="ml-3">
+                            <h6 class="font-weight-semi-bold m-0">Josia Nandeng</h6>
+                            <small>- Banker</small>
+                        </div>
+                    </div>
+                    <p class="m-0">"Their customer support is outstanding! They were always available to address our concerns and provide assistance."
+
+</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+
+
+
+<section id="post-testimony">
+  <h2>Share Your Own Testimony</h2>
+  <form action="userresponse.php" method="POST">
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+    <input type="text" id="profession" name="profession" placeholder="Your Profession" required>
+    <textarea id="feedback" name="feedback" placeholder="Your Feedback" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<style>
+  #post-testimony {
+    max-width: 800px; /* Set the max width of the form container */
+    margin: 0 auto; /* Center the form on the page */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  #post-testimony h2 {
+    text-align: center;
+    color: #333;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    height: 150px; /* Set the height for the textarea */
+    resize: vertical; /* Allow vertical resizing */
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+
+</style>
+
+
+
+    <!-- Blog Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="text-center pb-2">
+                <h6 class="text-primary text-uppercase font-weight-bold">Our Blog</h6>
+                <h1 class="mb-4">Latest From Blog on E-Waste</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-5">
+                    <div class="position-relative">
+                        <img class="img-fluid w-100" src="img/blog-1.jpg" alt="">
+                        <div class="position-absolute bg-primary d-flex flex-column align-items-center justify-content-center rounded-circle"
+                            style="width: 60px; height: 60px; bottom: -30px; right: 30px;">
+                            <h4 class="font-weight-bold mb-n1">01</h4>
+                            <small class="text-white text-uppercase">Jan</small>
+                        </div>
+                    </div>
+                    <div class="bg-secondary" style="padding: 30px;">
+                        <div class="d-flex mb-3">
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-circle" style="width: 40px; height: 40px;" src="img/user.jpg" alt="">
+                                <a class="text-muted ml-2" href="">John Doe</a>
+                            </div>
+                            <div class="d-flex align-items-center ml-4">
+                                <i class="far fa-bookmark text-primary"></i>
+                                <a class="text-muted ml-2" href="">Web Design</a>
+                            </div>
+                        </div>
+                        <h4 class="font-weight-bold mb-3">Waste Management Strategies</h4>
+                        <p>Discover effective waste management solutions to enhance sustainability in your community.
+
+Learn about innovative approaches to waste reduction and the importance of recycling. Our insights will help you understand how to manage waste effectively for a cleaner environment.</p>
+                        <a class="border-bottom border-primary text-uppercase text-decoration-none" href="">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-5">
+                    <div class="position-relative">
+                        <img class="img-fluid w-100" src="img/blog-2.jpg" alt="">
+                        <div class="position-absolute bg-primary d-flex flex-column align-items-center justify-content-center rounded-circle"
+                            style="width: 60px; height: 60px; bottom: -30px; right: 30px;">
+                            <h4 class="font-weight-bold mb-n1">01</h4>
+                            <small class="text-white text-uppercase">Jan</small>
+                        </div>
+                    </div>
+                    <div class="bg-secondary" style="padding: 30px;">
+                        <div class="d-flex mb-3">
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-circle" style="width: 40px; height: 40px;" src="img/user.jpg" alt="">
+                                <a class="text-muted ml-2" href="">John Doe</a>
+                            </div>
+                            <div class="d-flex align-items-center ml-4">
+                                <i class="far fa-bookmark text-primary"></i>
+                                <a class="text-muted ml-2" href="">Web Design</a>
+                            </div>
+                        </div>
+                        <h4 class="font-weight-bold mb-3">Recycling Best Practices</h4>
+                        <p>Explore the best practices for recycling in your area.
+
+Stay informed about the latest recycling techniques and tips to maximize your recycling efforts. Find out how you can contribute to a more sustainable future.</p>
+                        <a class="border-bottom border-primary text-uppercase text-decoration-none" href="">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+
+<!-- Blog Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="text-center pb-2">
+                <h6 class="text-primary text-uppercase font-weight-bold">Our Blog</h6>
+                <h1 class="mb-4">Latest From Blog on General Waste</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-5">
+                    <div class="position-relative">
+                        <img class="img-fluid w-100" src="img/blog-3.jpg" alt="">
+                        <div class="position-absolute bg-primary d-flex flex-column align-items-center justify-content-center rounded-circle"
+                            style="width: 60px; height: 60px; bottom: -30px; right: 30px;">
+                            <h4 class="font-weight-bold mb-n1">01</h4>
+                            <small class="text-white text-uppercase">Jan</small>
+                        </div>
+                    </div>
+                    <div class="bg-secondary" style="padding: 30px;">
+                        <div class="d-flex mb-3">
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-circle" style="width: 40px; height: 40px;" src="img/user.jpg" alt="">
+                                <a class="text-muted ml-2" href="">John Doe</a>
+                            </div>
+                            <div class="d-flex align-items-center ml-4">
+                                <i class="far fa-bookmark text-primary"></i>
+                                <a class="text-muted ml-2" href="">Web Design</a>
+                            </div>
+                        </div>
+                        <h4 class="font-weight-bold mb-3">Community Waste Reduction Initiatives</h4>
+                        <p>Join the movement towards waste reduction in your neighborhood.
+
+Learn about community initiatives aimed at reducing waste and promoting recycling. Discover how you can get involved and make a difference.</p>
+                        <a class="border-bottom border-primary text-uppercase text-decoration-none" href="">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-5">
+                    <div class="position-relative">
+                        <img class="img-fluid w-100" src="img/blog-4.jpg" alt="">
+                        <div class="position-absolute bg-primary d-flex flex-column align-items-center justify-content-center rounded-circle"
+                            style="width: 60px; height: 60px; bottom: -30px; right: 30px;">
+                            <h4 class="font-weight-bold mb-n1">01</h4>
+                            <small class="text-white text-uppercase">Jan</small>
+                        </div>
+                    </div>
+                    <div class="bg-secondary" style="padding: 30px;">
+                        <div class="d-flex mb-3">
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-circle" style="width: 40px; height: 40px;" src="img/user.jpg" alt="">
+                                <a class="text-muted ml-2" href="">John Doe</a>
+                            </div>
+                            <div class="d-flex align-items-center ml-4">
+                                <i class="far fa-bookmark text-primary"></i>
+                                <a class="text-muted ml-2" href="">Web Design</a>
+                            </div>
+                        </div>
+                        <h4 class="font-weight-bold mb-3">Innovations in Waste Management</h4>
+                        <p>Stay updated on the latest innovations in waste management technology.
+
+Explore how new technologies are transforming waste management and enhancing recycling efforts for a more sustainable world.</p>
+                        <a class="border-bottom border-primary text-uppercase text-decoration-none" href="">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="row pt-5">
+            <div class="col-lg-7 col-md-6">
+                <div class="row">
+                    <div class="col-md-6 mb-5">
+                        <h3 class="text-primary mb-4">Get In Touch</h3>
+                        <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, Rayfield Jos, PLA</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+2348125412914</p>
+                        <p><i class="fa fa-envelope mr-2"></i>info@plswastemgt.com</p>
+                        <div class="d-flex justify-content-start mt-4">
+                            <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <h3 class="text-primary mb-4">Quick Links</h3>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Services</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Pricing Plan</a>
+                            <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 mb-5">
+                <h3 class="text-primary mb-4">Newsletter</h3>
+                <p>Stay informed about the latest updates on our waste management services, special offers, and environmental news! Subscribe to our newsletter today to receive timely updates and exclusive insights into sustainable practices.</p>
+                <form action="https://formspree.io/f/xqkrnrvo" method="POST">
+                <div class="w-100">
+                    <div class="input-group">
+                        <input type="text" name="email" class="form-control border-light" style="padding: 30px;" placeholder="Your Email Address">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary px-4">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: #3E3E4E !important;">
+        <div class="row">
+            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white">&copy; <a href="#">PLS Waste Mgt</a>. All Rights Reserved. 
+				
+				<!--/*** keep the footer author’s credit link/attribution link/backlink. If you'd like to use the  without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+				
+                </p>
+            </div>
+            <div class="col-lg-6 text-center text-md-right">
+                <ul class="nav d-inline-flex">
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Privacy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Terms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
